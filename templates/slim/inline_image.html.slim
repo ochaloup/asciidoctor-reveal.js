@@ -19,6 +19,6 @@ span class=[@type,role] style=("float: #{attr :float}" if attr? :float)
     - src = (@type == 'icon' ? (icon_uri @target) : (image_uri @target))
     - if attr? :link
       a.image href=(attr :link) target=(attr :window)
-        img src=src alt=(attr :alt) width=(attr :width) height=(attr :height) title=(attr :title)
+        img src=src alt=(attr :alt) width=(attr :width) height=(attr :height) title=(attr :title) class=((attr? :class) ? "#{attr :class}" : nil)
     - else
-      img src=src alt=(attr :alt) width=(attr :width) height=(attr :height) title=(attr :title)
+      img src=src alt=(attr :alt) width=(attr :width) height=(attr :height) title=(attr :title) class=((attr? :class) ? "#{attr :class}" : nil)
